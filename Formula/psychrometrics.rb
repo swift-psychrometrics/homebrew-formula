@@ -2,12 +2,12 @@ class Psychrometrics < Formula
   desc "Command-line tool for calculating psychrometric properties"
   homepage "https://github.com/swift-psychrometrics/psychrometrics-cli"
   url "https://github.com/swift-psychrometrics/psychrometrics-cli.git", branch: "main"
-  version "0.1.8"
+  version "0.1.10"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/swift-psychrometrics/psychrometrics-cli/releases/download/0.1.8"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fc428c30a8810c9b6198208ee3c84b71b1d9291a946704dc81cbe210229fecc4"
+    root_url "https://github.com/swift-psychrometrics/psychrometrics-cli/releases/download/0.1.10"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "f51b7fa7d065097624a756743ea5fa2dfc8814ca00287197ae09518dbcbca89b"
   end
 
   depends_on xcode: ["14.2", :build]
