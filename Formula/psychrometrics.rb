@@ -7,7 +7,7 @@ class Psychrometrics < Formula
 
   bottle do
     root_url "https://github.com/swift-psychrometrics/psychrometrics-cli/releases/download/0.1.12"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "c996c59d85eee3b2ed7f5f0984b4e0b6ef165800f6197787f7ef3d3fb4690788"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "838994db810518def228c7becb56feaa41ab9ea5f9a021203df5cf0fe119ac70"
   end
 
   depends_on xcode: ["14.2", :build]
