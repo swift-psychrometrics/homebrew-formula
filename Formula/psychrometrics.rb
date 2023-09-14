@@ -6,8 +6,8 @@ class Psychrometrics < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/swift-psychrometrics/psychrometrics-cli/releases/download/0.1.1" sha256 cellar: :any_skip_relocation, monterey: "5081e3f689c8cefc168a79d9c97759502e68330ae020eee66ccd67e3a0dfd03f"
     root_url "https://github.com/swift-psychrometrics/psychrometrics-cli/releases/download/0.1.1"
+    sha256 cellar: :any_skip_relocation, monterey: "5081e3f689c8cefc168a79d9c97759502e68330ae020eee66ccd67e3a0dfd03f"
     sha256 cellar: :any_skip_relocation, ventura: "f4db51dd207b5a1368432ba3ce11cac410a66a77e0679a88ebb7a0a3098f1621"
   end
 
