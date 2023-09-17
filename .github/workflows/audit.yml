@@ -1,0 +1,19 @@
+name: Audit
+
+on:
+  pull_request:
+    types:
+      - opened
+  push:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    name: Audit Formula
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: .github/action/brew-audit
+        with:
+          tap: swift-psycrhometrics/formula
+          formula: psychrometrics
