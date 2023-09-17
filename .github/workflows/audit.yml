@@ -11,9 +11,11 @@ jobs:
   audit:
     name: Audit Formula
     runs-on: ubuntu-latest
+    container:
+      image: homebrew/brew
     steps:
       - uses: actions/checkout@v3
-      - uses: .github/actions/brew-audit/action.yml
-        with:
-          tap: swift-psycrhometrics/formula
-          formula: psychrometrics
+      - name: Tap
+        run: brew tap swift-psychrometrics/formula
+      - name: Audit
+        run: brew audit --strict --online psychrometrics
