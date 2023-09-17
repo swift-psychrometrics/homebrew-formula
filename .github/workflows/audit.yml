@@ -10,11 +10,8 @@ on:
 jobs:
   audit:
     name: Audit Formula
-    runs-on: ubuntu-latest
-    container:
-      image: homebrew/brew
+    runs-on: macos-latest
     steps:
-      - name: Tap
-        run: brew tap swift-psychrometrics/formula
+      - uses: actions/checkout@v3
       - name: Audit
-        run: brew audit --strict --online psychrometrics
+        run: make audit
