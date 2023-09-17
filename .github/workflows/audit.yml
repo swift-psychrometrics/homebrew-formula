@@ -13,5 +13,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Tap
+        run: brew tap swift-psychrometrics/formula
       - name: Audit
-        run: make audit
+        run: brew audit --strict --online psychrometrics
