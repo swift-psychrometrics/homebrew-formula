@@ -1,17 +1,15 @@
 # homebrew-formula
 
-Repository for homebrew fromula that I've created.
+Repository for homebrew fromula for the
+[psychrometrics](https://github.com/swift-psychrometrics/psychrometrics-cli) command
+line application.
 
 ## Usage
 
 ```bash
-brew tap m-housh/formula
+brew tap swift-psychrometrics/formula
 ```
 
 ```bash
-brew install swift-zet
-```
-
-```bash
-brew install dots
+brew install psychrometrics
 ```
