@@ -10,10 +10,10 @@ on:
 jobs:
   audit:
     name: Audit Formula
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: .github/action/brew-audit
-        with:
-          tap: swift-psycrhometrics/formula
-          formula: psychrometrics
+      - name: Tap
+        run: brew tap swift-psychrometrics/formula
+      - name: Audit
+        run: brew audit --strict --online psychrometrics
